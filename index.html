@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal - Imran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+
+        <!-- part1 -->
+    
+        <div class="card">
+
+            <div class="image-div">
+                <img src="Images/profile-image.webp" alt="" class="image">
+            </div>
+
+            <div class="header">Love Babbar</div>
+
+            <div class="subHeading">
+                Founder, Code Help
+            </div>
+
+            <div class="buttons">
+                <button class="btn-1" onclick="activeModal()">
+                    <i class="fas fa-share"></i> 
+                    Share My Profile
+                </button>
+
+                <button class="btn-2">
+                    Follow Me
+                </button>
+            </div>
+
+        </div>
+
+    <!-- part2 -->
+    <div class="modal-wrapper">
+
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <i class="fa-solid fa-xmark" onclick="removeModal()"></i>
+        </div>
+
+        <div class="text-modal">
+            Share this via
+        </div>
+
+        <div class="modal-links">
+            <a href="https://www.facebook.com/love.babbar.58/" class="modal-link1">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            
+            <a href="https://twitter.com/lovebabbar3?lang=en" class="modal-link2">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            
+            <a href="https://www.instagram.com/lovebabbar1/?hl=en" class="modal-link3">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            
+            <a href="" class="modal-link4">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            
+            <a href="" class="modal-link5">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="overlay" onclick="removeModal()"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
