@@ -4,82 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Share Modal - Imran</title>
+    <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Link to your custom CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
-
+        <!-- Background circles -->
         <div class="circle-1"></div>
         <div class="circle-2"></div>
 
-        <!-- part1 -->
-    
+        <!-- Part 1 - User Card -->
         <div class="card">
-
+            <!-- User profile image -->
             <div class="image-div">
                 <img src="Images/profile-image.webp" alt="" class="image">
             </div>
 
+            <!-- User name -->
             <div class="header">Love Babbar</div>
 
+            <!-- User subheading -->
             <div class="subHeading">
                 Founder, Code Help
             </div>
 
+            <!-- Buttons -->
             <div class="buttons">
+                <!-- Button to activate the modal -->
                 <button class="btn-1" onclick="activeModal()">
                     <i class="fas fa-share"></i> 
                     Share My Profile
                 </button>
 
+                <!-- Button (placeholder) -->
                 <button class="btn-2">
                     Follow Me
                 </button>
             </div>
-
         </div>
 
-    <!-- part2 -->
-    <div class="modal-wrapper">
+        <!-- Part 2 - Modal (Hidden by default) -->
+        <div class="modal-wrapper">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h1>Share My Profile</h1>
+                <!-- Close button to hide the modal -->
+                <i class="fa-solid fa-xmark" onclick="removeModal()"></i>
+            </div>
 
-        <div class="modal-header">
-            <h1>Share My Profile</h1>
-            <i class="fa-solid fa-xmark" onclick="removeModal()"></i>
+            <!-- Modal content -->
+            <div class="text-modal">
+                Share this via
+            </div>
+
+            <!-- Social media links -->
+            <div class="modal-links">
+                <!-- Facebook link -->
+                <a href="https://www.facebook.com/love.babbar.58/" class="modal-link1">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                
+                <!-- Twitter link -->
+                <a href="https://twitter.com/lovebabbar3?lang=en" class="modal-link2">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                
+                <!-- Instagram link -->
+                <a href="https://www.instagram.com/lovebabbar1/?hl=en" class="modal-link3">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <!-- WhatsApp link (placeholder) -->
+                <a href="" class="modal-link4">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                
+                <!-- Telegram link (placeholder) -->
+                <a href="" class="modal-link5">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
         </div>
 
-        <div class="text-modal">
-            Share this via
-        </div>
-
-        <div class="modal-links">
-            <a href="https://www.facebook.com/love.babbar.58/" class="modal-link1">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            
-            <a href="https://twitter.com/lovebabbar3?lang=en" class="modal-link2">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            
-            <a href="https://www.instagram.com/lovebabbar1/?hl=en" class="modal-link3">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            
-            <a href="" class="modal-link4">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            
-            <a href="" class="modal-link5">
-                <i class="fa-brands fa-telegram"></i>
-            </a>
-        </div>
-
+        <!-- Overlay (to close the modal when clicked) -->
+        <div class="overlay" onclick="removeModal()"></div>
     </div>
 
-    <div class="overlay" onclick="removeModal()"></div>
-
-    </div>
-
+    <!-- JavaScript file to handle modal interactions -->
     <script src="script.js"></script>
 </body>
 </html>

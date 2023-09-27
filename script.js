@@ -1,14 +1,17 @@
+// Select the modal and overlay elements
 let modal = document.querySelector('.modal-wrapper');
 let overlay = document.querySelector('.overlay');
 
-function activeModal(){
-    console.log ('Modal Activated.');
-    modal.classList.add('activeModal');
-    overlay.classList.add('activeOverlay');
+// Function to activate the modal
+function activeModal() {
+    console.log('Modal Activated.'); // Log a message to the console
+    modal.classList.add('activeModal'); // Add the 'activeModal' class to the modal element
+    overlay.classList.add('activeOverlay'); // Add the 'activeOverlay' class to the overlay element
 }
 
-function removeModal(){
-    console.log ('Modal Deactivated.');
-    modal.classList.remove('activeModal');
-    overlay.classList.remove('activeOverlay');
+// Function to deactivate the modal
+function removeModal() {
+    console.log('Modal Deactivated.'); // Log a message to the console
+    modal.classList.remove('activeModal'); // Remove the 'activeModal' class from the modal element
+    overlay.classList.remove('activeOverlay'); // Remove the 'activeOverlay' class from the overlay element
 }

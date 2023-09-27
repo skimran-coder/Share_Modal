@@ -1,19 +1,21 @@
-*{
+/* Resetting default padding and margin for all elements */
+* {
     padding: 0;
     margin: 0;
 }
 
-.wrapper{
+/* Styling for the main wrapper */
+.wrapper {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
     background: black;
     color: white;
     position: relative;
-    /* z-index: -20; */
 }
 
-.circle-1{
+/* Styling for background circles */
+.circle-1 {
     position: absolute;
     z-index: 10;
     left: 25%;
@@ -21,12 +23,11 @@
     height: 14rem;
     width: 14rem;
     background-color: red;
-    /* border: 2px solid red; */
     border-radius: 100%;
     box-shadow: 0px 0px 50px red;
 }
 
-.circle-2{
+.circle-2 {
     position: absolute;
     z-index: 10;
     bottom: 10%;
@@ -34,20 +35,12 @@
     height: 18rem;
     width: 18rem;
     background-color: purple;
-    /* border: 1px solid; */
     border-radius: 100%;
     box-shadow: 0px 0px 50px purple;
 }
 
-/* .card-wrapper{
-    color: white;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    z-index: 10;
-} */
-
-.card{
+/* Styling for user card container */
+.card {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,33 +54,37 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* transform: scale(1); */
     backdrop-filter: blur(15px);
     border: 1px solid #ffffff64;
     border-radius: 15px;
 }
 
-.image{
+/* Styling for user profile image */
+.image {
     width: 150px;
 }
 
-.header{
+/* Styling for user name */
+.header {
     font-size: 2em;
     font-weight: bold;
 }
 
-.subHeading{
+/* Styling for subheading */
+.subHeading {
     font-size: 1.2em;
     color: rgba(255, 255, 255, 0.573);
 }
 
-.buttons{
+/* Styling for buttons */
+.buttons {
     display: flex;
     gap: 10px;
     z-index: 20;
 }
 
-.btn-1, .btn-2 {
+.btn-1,
+.btn-2 {
     background-color: transparent;
     color: #ffffffb9;
     border: 2px solid #ffffffb9;
@@ -97,7 +94,8 @@
     width: 150px;
 }
 
-.btn-1:hover{
+/* Hover effect for buttons */
+.btn-1:hover {
     background-color: #ffffffb9;
     cursor: pointer;
 }
@@ -107,8 +105,9 @@
     cursor: pointer;
 }
 
-.modal-wrapper{
-    position: absolute; 
+/* Styling for the modal container (hidden by default) */
+.modal-wrapper {
+    position: absolute;
     width: 500px;
     top: 50%;
     left: 50%;
@@ -124,10 +123,10 @@
     gap: 30px;
     padding: 25px;
     scale: 0;
-    
 }
 
-.modal-header{
+/* Styling for modal header */
+.modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,16 +134,19 @@
     padding-bottom: 10px;
 }
 
-.text-modal{
+/* Styling for modal text */
+.text-modal {
     font-size: 1.2em;
 }
 
-.modal-links{
+/* Styling for social media links */
+.modal-links {
     display: flex;
     justify-content: space-between;
 }
 
-.fa-brands{
+/* Styling for social media icons */
+.fa-brands {
     font-size: 25px;
     border-radius: 100%;
     padding: 25px;
@@ -152,7 +154,8 @@
     animation: fadeIn 1s ease-out 0s 1 normal forwards;
 }
 
-.fa-facebook-f{
+/* Styling for individual social media links */
+.fa-facebook-f {
     color: rgb(0, 132, 255);
     border: 1px solid rgb(0, 132, 255);
 }
@@ -162,66 +165,49 @@
     border: 1px solid rgb(255, 0, 170);
 }
 
-.fa-twitter{
+.fa-twitter {
     color: rgb(0, 132, 255);
     border: 1px solid rgb(0, 132, 255);
 }
 
-.fa-whatsapp{
+.fa-whatsapp {
     color: rgb(0, 255, 64);
     border: 1px solid rgb(0, 255, 64);
 }
 
-.fa-telegram{
+.fa-telegram {
     color: rgb(0, 132, 255);
     border: 1px solid rgb(0, 132, 255);
 }
 
-.fa-telegram:hover{
+/* Hover effect for social media icons */
+.fa-telegram:hover {
     background-color: rgb(0, 132, 255);
     color: white;
 }
-.fa-facebook-f:hover{
+
+.fa-facebook-f:hover {
     background-color: rgb(0, 132, 255);
     color: white;
 }
-.fa-twitter:hover{
+
+.fa-twitter:hover {
     background-color: rgb(0, 132, 255);
     color: white;
 }
-.fa-instagram:hover{
+
+.fa-instagram:hover {
     background-color: rgb(255, 0, 170);
     color: white;
 }
-.fa-whatsapp:hover{
+
+.fa-whatsapp:hover {
     background-color: rgb(0, 255, 64);
     color: white;
 }
 
-.activeModal{
-    scale: 1;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.modal-wrapper {
-    /* ... other styles ... */
-    animation: fadeIn 1s ease-out 0s 1 normal forwards;
-}
-
-.fa-xmark{
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.overlay{
+/* Styling for the overlay (background when modal is active) */
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -235,6 +221,17 @@
     cursor: pointer;
 }
 
-.activeOverlay{
+/* Class to activate the overlay */
+.activeOverlay {
     display: block;
+}
+
+/* Keyframes for fading in elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
