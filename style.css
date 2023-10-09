@@ -123,6 +123,11 @@
     gap: 30px;
     padding: 25px;
     scale: 0;
+    
+}
+
+.activeModal{
+    scale: 1;
 }
 
 /* Styling for modal header */
@@ -132,6 +137,14 @@
     align-items: center;
     border-bottom: 2px solid rgba(255, 255, 255, 0.556);
     padding-bottom: 10px;
+}
+
+.fa-xmark{
+    font-size: 1.5rem;
+}
+
+.fa-xmark:hover{
+    cursor: pointer;
 }
 
 /* Styling for modal text */
