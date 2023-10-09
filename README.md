@@ -2,7 +2,8 @@
 
 This Share Modal project is a simple web application that allows users to share a user's profile on social media platforms. It provides a user-friendly interface with options to follow the user and share their profile on platforms like Facebook, Twitter, Instagram, WhatsApp, and Telegram.
 
-![Share Modal Screenshot](screenshot.png)
+![Share Modal Screenshot](images/screenshot%201.png)
+![Share Modal Screenshot](images/screenshot%202.png)
 
 ## Features
 
