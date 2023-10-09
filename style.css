@@ -2,16 +2,25 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* Styling for the main wrapper */
 .wrapper {
     height: 100vh;
+    width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
     background: black;
     color: white;
+    
+}
+
+.container{
     position: relative;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* Styling for background circles */
@@ -44,9 +53,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    translate: -50% -50%;
-    width: 300px;
-    height: 450px;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 100%;
+    height: 500px;
     background: #ffffff1a;
     z-index: 20;
     padding: 20px 50px;
@@ -61,7 +71,7 @@
 
 /* Styling for user profile image */
 .image {
-    width: 150px;
+    width: 9.375rem;
     border-radius: 100%;
 }
 
@@ -80,8 +90,9 @@
 /* Styling for buttons */
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     z-index: 20;
+    flex-wrap: wrap;
 }
 
 .btn-1,
@@ -90,9 +101,9 @@
     color: #ffffffb9;
     border: 2px solid #ffffffb9;
     border-radius: 4px;
-    padding: 8px;
+    padding: 0.5rem 0.25rem;
     font-size: 0.8em;
-    width: 150px;
+    width: 8rem;
 }
 
 /* Hover effect for buttons */
@@ -109,7 +120,8 @@
 /* Styling for the modal container (hidden by default) */
 .modal-wrapper {
     position: absolute;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -156,7 +168,10 @@
 /* Styling for social media links */
 .modal-links {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    /* justify-content: space-between; */
 }
 
 /* Styling for social media icons */
