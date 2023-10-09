@@ -62,6 +62,7 @@
 /* Styling for user profile image */
 .image {
     width: 150px;
+    border-radius: 100%;
 }
 
 /* Styling for user name */
@@ -183,20 +184,20 @@
     border: 1px solid rgb(0, 132, 255);
 }
 
-.fa-whatsapp {
-    color: rgb(0, 255, 64);
-    border: 1px solid rgb(0, 255, 64);
-}
-
-.fa-telegram {
+.fa-linkedin {
     color: rgb(0, 132, 255);
     border: 1px solid rgb(0, 132, 255);
 }
 
+.fa-threads {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
 /* Hover effect for social media icons */
-.fa-telegram:hover {
-    background-color: rgb(0, 132, 255);
-    color: white;
+.fa-threads:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .fa-facebook-f:hover {
@@ -214,8 +215,8 @@
     color: white;
 }
 
-.fa-whatsapp:hover {
-    background-color: rgb(0, 255, 64);
+.fa-linkedin:hover {
+    background-color: rgb(0, 132, 255);
     color: white;
 }
 
