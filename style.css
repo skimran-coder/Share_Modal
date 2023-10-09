@@ -249,3 +249,40 @@
         opacity: 1;
     }
 }
+
+
+/* CSS for animating background circles */
+
+/* Keyframes for circle animation */
+@keyframes moveCircle1 {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(50px, 50px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moveCircle2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-50px, -50px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Apply animation to circles */
+.circle-1 {
+    animation: moveCircle1 8s linear infinite;
+}
+
+.circle-2 {
+    animation: moveCircle2 6s linear infinite;
+}
