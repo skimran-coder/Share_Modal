@@ -79,12 +79,14 @@
 .header {
     font-size: 2em;
     font-weight: bold;
+    text-align: center;
 }
 
 /* Styling for subheading */
 .subHeading {
     font-size: 1.2em;
     color: rgba(255, 255, 255, 0.573);
+    text-align: center;
 }
 
 /* Styling for buttons */
@@ -93,10 +95,13 @@
     gap: 1rem;
     z-index: 20;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn-1,
 .btn-2 {
+    all: unset;
+    text-align: center;
     background-color: transparent;
     color: #ffffffb9;
     border: 2px solid #ffffffb9;
@@ -176,15 +181,16 @@
 
 /* Styling for social media icons */
 .fa-brands {
-    font-size: 25px;
+    font-size: 1.5rem;
     border-radius: 100%;
-    padding: 25px;
+    padding: 1.5rem;
     color: white;
     animation: fadeIn 1s ease-out 0s 1 normal forwards;
 }
 
 /* Styling for individual social media links */
 .fa-facebook-f {
+    
     color: rgb(0, 132, 255);
     border: 1px solid rgb(0, 132, 255);
 }
